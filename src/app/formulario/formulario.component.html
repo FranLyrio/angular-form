@@ -1,0 +1,16 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <div [ngClass]="aplicaCssErro('owner')">
+    <label for="owner">Nome</label>
+  </div>
+  <div>
+    <input name="owner" formControlName="owner" type="text" placeholder="Me diga seu nome">
+  </div>
+  
+  <div>
+    <label for="email">Email</label>
+  </div>
+  <div>
+    <input name="email" formControlName="email" type="text" placeholder="Me diga seu email">
+  </div>  
+  <button type="submit">Submit</button> 
+</form>
